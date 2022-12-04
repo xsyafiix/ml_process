@@ -5,12 +5,12 @@ Project ini dibuat untuk melakukan prediksi apakah program bayi tabung akan berh
 In-Vitro Fertilisation (IVF) atau lebih sering dikenal bayi tabung adalah metode atau proses pembuahan sel telur oleh sel sperma di luar tubuh wanita. Bayi tabung merupakan salah satu solusi bagi orang yang memiliki berbagai masalah sehingga susah untuk mendapatkan keturunan baik dikarenakan penyakit genetik, masalah antibody, jumlah sel sperma rendah, kualitas sel telur kurang baik, endometriosis (infeksi Rahim), dll.
 Meski demikian, bayi tabung tidak selalu berhasil meskipun telah mengeluarkan biaya yang sangat tinggi. Sehingga diperlukan suatu metode untuk melakukan prediksi tingkat kesuksesan kelahiran bayi tabung yang dapat dijadikan acuan apakah perlu mengambil program bayi tabung atau tidak sebelum mengeluarkan biaya yang cukup tinggi. Jadi, produk yang diharapkan adalah prediksi tingkat kesuksesan kelahiran bayi tabung berdasarkan kondisi pasien sehingga dapat meminimalkan biaya untuk mendapatkan keturunan.
 
-![Alt text](/main/assets/ML%20workflow.jpg?raw=true "Optional Title")
+![Alt text](/assets/ML%20workflow.jpg?raw=true "Optional Title")
 
 
 ## Cara Menggunakan
 
-![Alt text](main/assets/interface.jpg?raw=true "Optional Title")
+![Alt text](/assets/interface.jpg?raw=true "Optional Title")
 
 ## Dataset
 Fitur yang digunakan adalah sebagai berikut:
