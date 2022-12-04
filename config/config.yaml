@@ -1,0 +1,216 @@
+# Path related
+raw_dataset_file: data/raw/ar-2015-2016-xlsb.xlsb
+train_set_path:
+- data/processed/x_train.pkl
+- data/processed/y_train.pkl
+valid_set_path:
+- data/processed/x_valid.pkl
+- data/processed/y_valid.pkl
+test_set_path:
+- data/processed/x_test.pkl
+- data/processed/y_test.pkl
+train_feng_set_path:
+- data/processed/x_train_feng.pkl
+- data/processed/y_train_feng.pkl
+valid_feng_set_path:
+- data/processed/x_valid_feng.pkl
+- data/processed/y_valid_feng.pkl
+test_feng_set_path:
+- data/processed/x_test_feng.pkl
+- data/processed/y_test_feng.pkl
+raw_dataset_path: data/processed/raw_dataset.pkl
+cleaned_raw_dataset_path: data/processed/raw_dataset.pkl
+production_model_path: models/production_model.pkl
+training_log_path: log/training_log.json
+
+
+# Debug related
+print_debug: true
+
+# Columns by data type related
+int32_columns:
+- total_number_of_previous_ivf_cycles
+- total_number_of_ivf_pregnancies
+- total_number_of_di_pregnancies
+- total_number_of_live_births_conceived_through_ivf_or_di
+- total_number_of_live_births_conceived_through_ivf
+- total_number_of_live_births_conceived_through_di
+- type_of_infertility_female_primary
+- type_of_infertility_female_secondary
+- type_of_infertility_male_primary
+- type_of_infertility_male_secondary
+- type_of_infertility_couple_primary
+- type_of_infertility_couple_secondary
+- cause_of_infertility_tubal_disease
+- cause_of_infertility_ovulatory_disorder
+- cause_of_infertility_male_factor
+- cause_of_infertility_patient_unexplained
+- cause_of_infertility_endometriosis
+- cause_of_infertility_cervical_factors
+- cause_of_infertility_female_factors
+- cause_of_infertility_partner_sperm_concentration
+- cause_of_infertility_partner_sperm_morphology
+- causes_of_infertility_partner_sperm_motility
+- cause_of_infertility_partner_sperm_immunological_factors
+- stimulation_used
+- fresh_cycle
+- frozen_cycle
+- eggs_thawed
+- fresh_eggs_collected
+- eggs_mixed_with_partner_sperm
+- embryos_transfered
+- year_of_treatment
+- live_birth_occurrence
+- number_of_live_births
+- number_of_foetal_sacs_with_fetal_pulsation
+object_columns:
+- patient_age_at_treatment
+- total_number_of_previous_cycles_both_ivf_and_di
+- total_number_of_previous_treatments_both_ivf_and_di_at_clinic
+- total_number_of_previous_di_cycles
+- total_number_of_previous_pregnancies_both_ivf_and_di
+- main_reason_for_producing_embroys_storing_eggs
+- type_of_ovulation_induction
+- egg_donor_age_at_registration
+- sperm_donor_age_at_registration
+- type_of_treatment_ivf_or_di
+- specific_treatment_type
+- egg_source
+- sperm_from
+- total_eggs_mixed
+- eggs_mixed_with_donor_sperm
+- total_embryos_created
+- eggs_microinjected
+- early_outcome
+- heart_one_weeks_gestation
+- heart_one_birth_outcome
+- heart_one_birth_weight
+- heart_onesex
+- heart_two_weeks_gestation
+- heart_two_birth_outcome
+- heart_two_birth_weight
+- heart_two_sex
+- heart_three_weeks_gestation
+- heart_three_birth_outcome
+- heart_three_birth_weight
+- heart_three_sex
+- heart_four_weeks_gestation
+- heart_four_birth_outcome
+- heart_four_birth_weight
+- heart_four_sex
+
+# Predictors and label related
+label: live_birth_occurrence
+predictors:
+- patient_age_at_treatment
+- total_number_of_previous_ivf_cycles
+- total_number_of_ivf_pregnancies
+- total_number_of_live_births_conceived_through_ivf
+- type_of_infertility_female_primary
+- type_of_infertility_female_secondary
+- type_of_infertility_male_primary
+- type_of_infertility_male_secondary
+- type_of_infertility_couple_primary
+- type_of_infertility_couple_secondary
+- cause_of_infertility_tubal_disease
+- cause_of_infertility_ovulatory_disorder
+- cause_of_infertility_male_factor
+- cause_of_infertility_patient_unexplained
+- cause_of_infertility_endometriosis
+- cause_of_infertility_cervical_factors
+- cause_of_infertility_female_factors
+- cause_of_infertility_partner_sperm_concentration
+- cause_of_infertility_partner_sperm_morphology
+- causes_of_infertility_partner_sperm_motility
+- cause_of_infertility_partner_sperm_immunological_factors
+- stimulation_used
+- fresh_cycle
+- frozen_cycle
+- eggs_thawed
+- fresh_eggs_collected
+- eggs_mixed_with_partner_sperm
+- embryos_transfered
+
+
+# Range of data related
+range_total_number_of_previous_ivf_cycles:
+- 0
+- 20
+range_total_number_of_ivf_pregnancies:
+- 0
+- 20
+range_total_number_of_live_births_conceived_through_ivf:
+- 0
+- 20
+range_type_of_infertility_female_primary:
+- 0
+- 1
+range_type_of_infertility_female_secondary:
+- 0
+- 1
+range_type_of_infertility_male_primary:
+- 0
+- 1
+range_type_of_infertility_male_secondary:
+- 0
+- 1
+range_type_of_infertility_couple_primary:
+- 0
+- 1
+range_type_of_infertility_couple_secondary:
+- 0
+- 1
+range_cause_of_infertility_tubal_disease:
+- 0
+- 1
+range_cause_of_infertility_ovulatory_disorder:
+- 0
+- 1
+range_cause_of_infertility_male_factor:
+- 0
+- 1
+range_cause_of_infertility_patient_unexplained:
+- 0
+- 1
+range_cause_of_infertility_endometriosis:
+- 0
+- 1
+range_cause_of_infertility_cervical_factors:
+- 0
+- 1
+range_cause_of_infertility_female_factors:
+- 0
+- 1
+range_cause_of_infertility_partner_sperm_concentration:
+- 0
+- 1
+range_cause_of_infertility_partner_sperm_morphology:
+- 0
+- 1
+range_causes_of_infertility_partner_sperm_motility:
+- 0
+- 1
+range_cause_of_infertility_partner_sperm_immunological_factors:
+- 0
+- 1
+range_stimulation_used:
+- 0
+- 1
+range_fresh_cycle:
+- 0
+- 1
+range_frozen_cycle:
+- 0
+- 1
+range_eggs_thawed:
+- 0
+- 100
+range_fresh_eggs_collected:
+- 0
+- 100
+range_eggs_mixed_with_partner_sperm:
+- 0
+- 100
+range_embryos_transfered:
+- 0
+- 10
