@@ -198,7 +198,7 @@ with st.form(key = "air_data_form"):
         raw_data = {
             "patient_age_at_treatment": patient_age_at_treatment,
             "total_number_of_previous_ivf_cycles": total_number_of_previous_ivf_cycles,
-            "total_number_of_ivf_pregnancies_total_number_of_ivf_pregnancies": total_number_of_ivf_pregnancies_total_number_of_ivf_pregnancies,
+            "total_number_of_ivf_pregnancies": total_number_of_ivf_pregnancies,
             "total_number_of_live_births_conceived_through_ivf": total_number_of_live_births_conceived_through_ivf,
             "type_of_infertility_female_primary": type_of_infertility_female_primary,
             "type_of_infertility_female_secondary": type_of_infertility_female_secondary,
